@@ -1,0 +1,113 @@
+:root {
+    --main-color: orange;
+}
+
+@media(max-width: 767px) {
+    header .container nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: var(--main-color);
+        width: 300px;
+        align-items: flex-end;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    header .container nav ul::before {
+        content: "";
+        position: absolute;
+        top: -19px;
+        right: 15px;
+        border-color: #ff000000 #0000ff00 var(--main-color) transparent;
+        border-width: 10px 10px 10px 10px;
+        border-style: solid;
+    }
+
+    header .container nav i {
+        color: white;
+        font-size: 30px;
+    }
+
+    header .container nav:hover ul {
+        display: flex;
+    }
+
+    .landing .container {
+        left: 50%;
+        width: 100%;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .text {
+        text-align: center;
+    }
+
+    .about .container .text a {
+        margin: 20px auto 0;
+    }
+
+    .about .container .image img {
+        width: 14em;
+    }
+
+    .over .container {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .over .container div {
+        height: 20em;
+    }
+
+    .blog .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .blog .container .box {
+        width: 100%;
+
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container .left .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container .left .foot .f1,
+    footer .container .left .foot .f2,
+    footer .container .left .foot .f3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer .container .left .foot .f2 div {
+        flex-direction: column;
+    }
+    footer .container .right .social {
+
+        justify-content: center;
+    }
+    footer .container .right .f4 {
+        text-align: center;
+    }
+    footer .container .right .f4 div {
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width:991px) {}
